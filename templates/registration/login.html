@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+{% block title %} Windykacja długów | Biuro Obsługi Wierzytelności INFOS Sp. z o.o. {% endblock %}
+{% block body %}
+{% load static %}
+<style>
+    body{background-color:white;color:blue;}
+
+</style>
+
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <button>zaloguj</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% block title %} Windykacja długów | Biuro Obsługi Wierzytelności INFOS Sp. z o.o. {% endblock %}
+{% block body %}
+{% load static %}
+
+      <div id="nav">
+
+        <a onclick="choose('cat users/{{ user.username }}/profile.txt')">profile</a>
+        <a onclick="choose('sudo users/{{ user.username }}/training.sh')">trening</a>
+        <a onclick="choose('sudo users/{{ user.username }}/haxegon.exe')">actions</a>
+        <a onclick="clean()">clear</a>
+        <a onclick="choose('logout')">logout</a>
+
+    </div>
+
+<div class="xd">
+        <div id="typing-box"></div>
+</div>
+
+{% endblock %}
