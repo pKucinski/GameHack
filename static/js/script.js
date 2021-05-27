@@ -8,14 +8,8 @@ var user = 'user';
 var email = 'mail'
 var programming = 0;
 var language = 0;
-var ios = 0;
-var charisma = 0;
-var intelligence = 0;
-var obstinacy = 0;
-var money = 0;
+var os = 0;
 var renown = 0;
-var bug_fixed = 0;
-var bug_used = 0;
 
 
 function choose(text) {
@@ -37,25 +31,21 @@ function typing() {
 
 function typeProfile() {
   if (txt.includes("profile")) {
-    var a = "{{user.username}}";
-    document.getElementById("typing-box").innerHTML += '<br>Nick:' + a + '<br>';
-    document.getElementById("typing-box").innerHTML += 'email: '+user.mail+' <br>';
-    document.getElementById("typing-box").innerHTML += 'Pieniądzę: '+profile.money+' <br>';
-    document.getElementById("typing-box").innerHTML += 'Udanych włamań: 12<br>';
-    document.getElementById("typing-box").innerHTML += 'znalezionych luk: 3<br>';
-    document.getElementById("typing-box").innerHTML += 'Renoma: 23<br>';
+    document.getElementById("typing-box").innerHTML += '<br>Nick: ' + user + '<br>';
+    document.getElementById("typing-box").innerHTML += 'email : ' + email + ' <br>';
+    document.getElementById("typing-box").innerHTML += 'Programowanie: ' + programming + ' <br>';
+    document.getElementById("typing-box").innerHTML += 'Język angielski: '+ language + ' <br>';
+    document.getElementById("typing-box").innerHTML += 'Systemy operacyjne: '+os+'<br>';
+    document.getElementById("typing-box").innerHTML += 'Renoma: '+renown+'<br>';
     document.getElementById("typing-box").innerHTML += static_text;
 
     window.scrollTo(0, document.body.scrollHeight);
   }
 
   else if (txt.includes("training")) {
-    document.getElementById("typing-box").innerHTML += '<br>Programowanie: 12lvl<br>';
-    document.getElementById("typing-box").innerHTML += 'Język angielksi: 6lvl<br>';
-    document.getElementById("typing-box").innerHTML += 'Systemy operacyjne: 3lvl<br>';
-    document.getElementById("typing-box").innerHTML += 'Inteligencja: 2lvl<br>';
-    document.getElementById("typing-box").innerHTML += 'Charyzma: 5lvl<br>';
-    document.getElementById("typing-box").innerHTML += 'Szczęście: 1lvl<br>';
+    document.getElementById("typing-box").innerHTML += '<br>Programowanie: ' + programming + ' <a>(Trenuj)gi</a> <br>';
+    document.getElementById("typing-box").innerHTML += 'Język angielski: '+ language + ' <a>(Trenuj)</a> <br>';
+    document.getElementById("typing-box").innerHTML += 'Systemy operacyjne: '+os+' <a>(Trenuj)</a> <br>';
     document.getElementById("typing-box").innerHTML += static_text;
 
     window.scrollTo(0, document.body.scrollHeight);
@@ -88,9 +78,14 @@ function clean() {
   document.getElementById("typing-box").innerHTML = static_text;
 }
 
-function start(user) {
+function start(user, email, programming, language, os, renown) {
   static_text = user + '@linux~$ $';
   this.user = user;
+  this.email = email;
+  this.programming = programming;
+  this.language = language;
+  this.os = os;
+  this.renown = renown;
   document.getElementById("typing-box").innerHTML = static_text;
 }
 

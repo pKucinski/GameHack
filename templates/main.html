@@ -15,7 +15,7 @@
 
 
   </head>
-  <body onload="start('{{ user.username }}')">
+  <body onload="start('{{user.username}}', '{{user.email}}', '{{user.profile.programming}}', '{{user.profile.language}}', '{{user.profile.os}}', '{{user.profile.renown}}')">
 
   {% block body %} {% endblock %}
 

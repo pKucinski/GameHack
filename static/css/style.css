@@ -6,6 +6,7 @@ html,body{
     color: #ffffff;
     margin: 0;
     font-size: 28px;
+
 }
 
 a{
@@ -81,3 +82,46 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
+#login{
+color: #ffffff;
+border: solid 1px #ffffff;
+width: 50%;
+padding: 15px;
+margin: 10% auto;
+background-color: #000000;
+  padding-bottom: 30px;
+
+}
+
+#login h2{
+    text-align: center;
+}
+
+#login button{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: solid 1px #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+#register{
+    margin-top: 75px;
+}
+
+#login a:hover{
+    color:#A9A9A9;
+}
+
+
