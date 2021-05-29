@@ -7,8 +7,18 @@
 <div id="container">
     <img class="logo" src="{% static 'img/logo.png' %}"/>
     <div id="options"></div>
+
+    <div class="row">
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="width: 1024px;" src="{% static 'img/1.png' %}" alt="">
+  </div>
+  <div class="column">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="width: 1024px;" src="{% static 'img/2.png' %}" alt="">
+  </div>
+
+</div>
+
 <div class="image">
-  <img src="{% static 'img/background.png' %}" alt="terminal" style="width:100%">
   <button onclick="location.href='/game'" class="btn">Zagraj</button>
 </div>
 </div>

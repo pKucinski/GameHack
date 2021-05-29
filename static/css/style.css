@@ -9,12 +9,23 @@ html,body{
 
 }
 
-a{
-    color: #ffffff;
-    text-decoration: none;
-    background-color: black;
-
+/* Gallery */
+.column {
+  margin-top: 5%;
+  margin-left: 5%;
+  float: left;
+  width: 1024px;
+  box-sizing: border-box;
 }
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Navigation */
 
 #nav{
   position: fixed;
@@ -32,10 +43,8 @@ a{
     padding: 5px;
 }
 
-#nav a:hover{
-    background-color: gray;
-    cursor: pointer;
-    padding: 5px;
+
+/* Game */
 }
 #typing-box a:hover{
     background-color: gray;
@@ -55,10 +64,7 @@ a{
   max-width: 400px;
 }
 
-.image img {
-  width: 100%;
-  height: auto;
-}
+
 
 .image .btn {
   position: absolute;
@@ -84,7 +90,7 @@ a{
 }
 
 
-
+/* Login and SignUp */
 #login{
 color: #ffffff;
 border: solid 1px #ffffff;
@@ -124,4 +130,11 @@ background-color: #000000;
     color:#A9A9A9;
 }
 
+.click{
+    display: inline;
+}
 
+.click:hover{
+    background-color: gray;
+    cursor: pointer;
+}
